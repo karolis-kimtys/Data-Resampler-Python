@@ -8,14 +8,12 @@ from scipy.signal import argrelextrema
 
 start_time = time.time()
 
-
 df = pd.read_csv("EURCHF.csv",
             parse_dates={'DateTime': ['Date', 'Time']},
             usecols=['Date', 'Time', 'Open', 'High', 'Low', 'Close', 'Volume'],
             na_values=['nan']).set_index('DateTime')
 
 ohlc_dict = {'Open':'first', 'High':'max', 'Low':'min', 'Close': 'last', 'Volume': 'sum'}
-
 df = df.resample('1H', how=ohlc_dict).dropna(how='any')
 
 #df.iloc[0] = df.iloc[0].shift(periods=5).fillna('0')
