@@ -24,6 +24,7 @@ Date     Time    Open   High   Low   Close  Volume
 Resampled 1H interval data:
 
 DateTime	 Open	 High	 Low	 Close	   Volume	
+
 02/01/2019 05:00	1.1262	1.1269	1.1262	1.1269	2171	
 02/01/2019 06:00	1.1269	1.1269	1.1261	1.1267	4946	
 02/01/2019 07:00	1.1267	1.1271	1.1263	1.1264	7824	
